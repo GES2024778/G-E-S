@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ubicación - GES</title>
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            height: 100vh;
+            overflow: hidden;
+        }
+        header img {
+            width: 150px;
+            height: auto;
+            margin-top: 20px;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #eaee0b;
+            padding: 10px;
+            width: 100%;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 5px;
+            background-color: #131212;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        nav a:hover {
+            background-color: #000000;
+        }
+        #background-video {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            min-width: 100%; 
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: -1;
+            transform: translate(-50%, -50%);
+            object-fit: cover;
+        }
+        .container {
+            position: relative;
+            text-align: center;
+            color: white;
+            top: 30%;
+            transform: translateY(-30%);
+            z-index: 1;
+        }
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+        .logos {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        .logos img {
+            width: 100px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+        .logos img:hover {
+            transform: scale(1.1);
+        }
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            .logos img {
+                width: 80px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="img/logo.png" alt="Logo GES">
+    </header>
+
+    <video autoplay muted loop playsinline id="background-video">
+        <source src="img/Video-Fondo.mp4" type="video/mp4">
+        Tu navegador no soporta videos en HTML5.
+    </video>
+
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="servicios.html">Servicios</a>
+        <a href="sobre_nosotros.html">Sobre Nosotros</a>
+        <a href="contacto.html">Contacto</a>
+        <a href="redes.html">Redes</a>
+        <a href="ubicacion.html">Ubicación</a>
+    </nav>
+
+    <div class="container">
+        <h1>Encuentra nuestra ubicación</h1>
+        <div class="logos">
+            <a href="https://www.google.com/maps?q=ubicacion" target="_blank">
+                <img src="img/Logo-Maps.png" alt="Google Maps">
+            </a>
+            <a href="https://waze.com/ul?ll=ubicacion" target="_blank">
+                <img src="img/Logo-Waze.jpg" alt="Waze">
+            </a>
+        </div>
+    </div>
+</body>
+</html>

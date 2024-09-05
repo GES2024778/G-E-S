@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GES</title>
+    <link rel="icon" href="img/logo1.jpeg" type="image/png">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            
+            color: rgb(13, 15, 1);
+            padding: 10px 0;
+            text-align: center;
+        }
+        header img {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #eaee0b;
+            padding: 10px;
+            flex-wrap: wrap;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 5px;
+            background-color: #131212;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            flex-grow: 1;
+            text-align: center;
+        }
+        nav a:hover {
+            background-color: #000000;
+        }
+        .welcome {
+            padding: 20px;
+            text-align: center;
+            color: white;
+            text-shadow: 2px 2px 4px #000;
+        }
+        h1 {
+            background-color: rgba(234, 238, 11, 0.8);
+            padding: 10px;
+            border-radius: 5px;
+            display: inline-block;
+        }
+        .background-image {
+            background-image: url('img/Construsa-AR.jpeg');
+            background-size: cover;
+            background-position: center;
+            height: 600px;
+            width: 100%;
+            position: relative;
+        }
+        .overlay {
+            background-color: rgba(0, 0, 0, 0.5); /* Oscurece la imagen de fondo */
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .welcome-container {
+            position: relative;
+            z-index: 2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        @media (max-width: 768px) {
+            .background-image {
+                height: 400px;
+            }
+            h1 {
+                font-size: 24px;
+            }
+        }
+        @media (max-width: 480px) {
+            .background-image {
+                height: 300px;
+            }
+            h1 {
+                font-size: 20px;
+            }
+            nav {
+                flex-direction: column;
+                align-items: center;
+            }
+            nav a {
+                width: 100%;
+                max-width: 200px;
+                margin: 5px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="img/logo.png" alt="Logo GES">
+    </header>
+
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="servicios.html">Servicios</a>
+        <a href="sobre_nosotros.html">Sobre Nosotros</a>
+        <a href="Contacto.html">Contacto</a>
+        <a href="redes.html">redes</a>
+        <a href="ubicacion.html">Ubicación</a>
+    </nav>
+
+    <div class="background-image">
+        <div class="overlay"></div>
+        <div class="welcome-container">
+            <div class="welcome">
+                <h1>Bienvenido a GES</h1>
+                <p>Estamos comprometidos con la construcción de tus sueños.</p>
+                <p>8 años de haberla fundado y estamos con personal capacitado para hacer cualquier tipo de trabajo</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

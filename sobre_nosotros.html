@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Nosotros - GES</title>
+    <link rel="icon" href="img/logo1.jpeg" type="image/png">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #cfcfca;
+        }
+        header {
+            background-color: #ffffff;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        header img {
+            width: 300px;
+            height: auto;
+        }
+        nav {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            background-color: #eaee0b;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 5px;
+            background-color: #000000;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            text-align: center;
+            flex-grow: 1;
+            max-width: 150px;
+        }
+        nav a:hover {
+            background-color: #666666;
+        }
+        .welcome {
+            padding: 20px;
+            text-align: center;
+            background-color: #cfcfca;
+            margin: 10px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                align-items: center;
+            }
+            nav a {
+                padding: 15px;
+                max-width: none;
+            }
+        }
+        @media (max-width: 480px) {
+            nav a {
+                padding: 10px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="img/logo.png" alt="Logo GES">
+    </header>
+
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="servicios.html">Servicios</a>
+        <a href="sobre_nosotros.html">Sobre Nosotros</a>
+        <a href="Contacto.html">Contacto</a>
+        <a href="redes.html">redes</a>
+        <a href="ubicacion.html">Ubicación</a>
+    </nav>
+
+    <div class="welcome">
+        <h1>Sobre Nosotros</h1>
+        <p>En GES, somos una empresa dedicada a la construcción y remodelación con más de 8 años de experiencia en el sector.</p>
+        <p>Nuestro equipo está compuesto por profesionales altamente capacitados y comprometidos con la calidad y la satisfacción de nuestros clientes.</p>
+    </div>
+
+</body>
+</html>

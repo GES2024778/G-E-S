@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios - GES</title>
+    <link rel="icon" href="img/logo1.jpeg" type="image/png">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #cfcfca;
+        }
+        header {
+            background-color: #fcfcfc;
+            color: rgb(203, 236, 13);
+            padding: 10px 0;
+            text-align: center;
+        }
+        header img {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+        }
+        nav {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            background-color: #eaee0b;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 5px;
+            background-color: #000000;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            text-align: center;
+            flex-grow: 1;
+            max-width: 150px;
+        }
+        nav a:hover {
+            background-color: #666;
+        }
+        .welcome {
+            padding: 20px;
+            text-align: center;
+        }
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 20px;
+            justify-items: center;
+        }
+        .services-grid img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+        .services-grid li {
+            list-style: none;
+            text-align: center;
+            margin-top: 10px;
+        }
+        @media (max-width: 768px) {
+            .services-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media (max-width: 480px) {
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+            nav {
+                flex-direction: column;
+                align-items: center;
+            }
+            nav a {
+                padding: 10px;
+                max-width: none;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="img/logo.png" alt="Logo GES">
+    </header>
+
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="servicios.html">Servicios</a>
+        <a href="sobre_nosotros.html">Sobre Nosotros</a>
+        <a href="Contacto.html">Contacto</a>
+        <a href="redes.html">redes</a>
+        <a href="ubicacion.html">Ubicación</a>
+    </nav>
+
+    <div class="welcome">
+        <h1>Nuestros Servicios</h1>
+        <p>Ofrecemos una amplia gama de servicios de construcción que incluyen:</p>
+        <div class="services-grid">
+            <div>
+                <img src="img/diseño.jpg" alt="Diseño">
+                <li>Diseño</li>
+            </div>
+            <div>
+                <img src="img/planificacion.jpg" alt="Planificación">
+                <li>Planificación</li>
+            </div>
+            <div>
+                <img src="img/construccion.jpg" alt="Construcción">
+                <li>Construcción</li>
+            </div>
+            <div>
+                <img src="img/remodelacion.jpg" alt="Remodelación">
+                <li>Remodelación</li>
+            </div>
+            <div>
+                <img src="img/mantenimiento.jpg" alt="Mantenimiento">
+                <li>Mantenimiento</li>
+            </div>
+            <div>
+                <img src="img/supervision.jpg" alt="Supervisión">
+                <li>Supervisión</li>
+            </div>
+            <div>
+                <img src="img/topografia.jpg" alt="Topografía">
+                <li>Topografía</li>
+            </div>
+            <div>
+                <img src="img/acabados.jpg" alt="Acabados Finales">
+                <li>Acabados Finales</li>
+            </div>
+            <div>
+                <img src="img/tablayeso.jpg" alt="Detalles de tablayeso">
+                <li>Detalles de tablayeso</li>
+            </div>
+            <div>
+                <img src="img/dellates.jpg" alt="Detalles arquitectónicos">
+                <li>Detalles arquitectónicos</li>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

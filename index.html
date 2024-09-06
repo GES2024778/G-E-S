@@ -12,7 +12,6 @@
             padding: 0;
         }
         header {
-            
             color: rgb(13, 15, 1);
             padding: 10px 0;
             text-align: center;
@@ -55,16 +54,22 @@
             border-radius: 5px;
             display: inline-block;
         }
-        .background-image {
-            background-image: url('img/Construsa-AR.jpeg');
-            background-size: cover;
-            background-position: center;
+        .background-video {
+            position: relative;
             height: 600px;
             width: 100%;
-            position: relative;
+            overflow: hidden;
+        }
+        .background-video video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
         }
         .overlay {
-            background-color: rgba(0, 0, 0, 0.5); /* Oscurece la imagen de fondo */
+            background-color: rgba(0, 0, 0, 0.5);
             height: 100%;
             width: 100%;
             position: absolute;
@@ -82,7 +87,7 @@
             box-sizing: border-box;
         }
         @media (max-width: 768px) {
-            .background-image {
+            .background-video {
                 height: 400px;
             }
             h1 {
@@ -90,7 +95,7 @@
             }
         }
         @media (max-width: 480px) {
-            .background-image {
+            .background-video {
                 height: 300px;
             }
             h1 {
@@ -119,11 +124,15 @@
         <a href="servicios.html">Servicios</a>
         <a href="sobre_nosotros.html">Sobre Nosotros</a>
         <a href="Contacto.html">Contacto</a>
-        <a href="redes.html">redes</a>
+        <a href="redes.html">Redes</a>
         <a href="ubicacion.html">Ubicación</a>
     </nav>
 
-    <div class="background-image">
+    <div class="background-video">
+        <video autoplay muted loop>
+            <source src="img/Video-Fondo.mp4" type="video/mp4">
+            Tu navegador no soporta el elemento de video.
+        </video>
         <div class="overlay"></div>
         <div class="welcome-container">
             <div class="welcome">

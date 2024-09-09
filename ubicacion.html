@@ -35,12 +35,12 @@
             text-decoration: none;
             padding: 10px 20px;
             margin: 0 5px;
-            background-color: #131212;
+            background-color: rgba(19, 18, 18, 0.8); /* Fondo transparente */
             border-radius: 5px;
             transition: background-color 0.3s ease;
         }
         nav a:hover {
-            background-color: #000000;
+            background-color: rgba(0, 0, 0, 0.8);
         }
         #background-video {
             position: fixed;
@@ -66,19 +66,35 @@
         h1 {
             font-size: 3rem;
             margin-bottom: 20px;
+            background-color: rgba(0, 0, 0, 0.6); /* Fondo negro transparente */
+            padding: 10px;
+            border-radius: 5px;
         }
         .logos {
             display: flex;
             justify-content: center;
             gap: 20px;
         }
+        .logos a {
+            display: inline-block;
+            padding: 10px;
+            border-radius: 5px;
+            border: 2px solid; /* Borde con color correspondiente */
+            transition: transform 0.3s ease;
+            background-color: transparent; /* Fondo transparente */
+        }
         .logos img {
             width: 100px;
-            cursor: pointer;
             transition: transform 0.3s ease;
         }
-        .logos img:hover {
+        .logos a:hover img {
             transform: scale(1.1);
+        }
+        .logos a:first-child {
+            border-color: #4285F4; /* Color de borde para Google Maps */
+        }
+        .logos a:last-child {
+            border-color: #09A6E8; /* Color de borde para Waze */
         }
         @media (max-width: 768px) {
             h1 {
@@ -110,7 +126,7 @@
     </nav>
 
     <div class="container">
-        <h1>Encuentranos enz nuestra ubicación</h1>
+        <h1>Encuéntranos en nuestra ubicación</h1>
         <div class="logos">
             <a href="https://www.google.com/maps/place/Construsa/@14.5861771,-90.54626,17z/data=!3m1!4b1!4m6!3m5!1s0x8589a1406903642b:0x347ce84023a5ca01!8m2!3d14.5861771!4d-90.5436851!16s%2Fg%2F11fy18np4_?entry=ttu&g_ep=EgoyMDI0MDkwNC4wIKXMDSoASAFQAw%3D%3D" target="_blank">
                 <img src="img/Logo-Maps.png" alt="Google Maps">

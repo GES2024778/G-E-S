@@ -46,7 +46,7 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-            background-color: #eaee0b;
+            background-color: transparent;
             padding: 10px;
         }
         nav a {
@@ -54,15 +54,17 @@
             text-decoration: none;
             padding: 10px 20px;
             margin: 5px;
-            background-color: #000000;
+            background-color: transparent;
             border-radius: 5px;
-            transition: background-color 0.3s ease;
+            border: 2px solid white;
+            transition: background-color 0.3s ease, color 0.3s ease;
             text-align: center;
             flex-grow: 1;
             max-width: 150px;
         }
         nav a:hover {
-            background-color: #666;
+            background-color: rgba(255, 255, 255, 0.2);
+            color: black;
         }
         .welcome {
             padding: 20px;

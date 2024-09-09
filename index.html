@@ -11,11 +11,16 @@
             margin: 0;
             padding: 0;
             text-shadow: 2px 2px 4px #000;
+            color: white;
+        }
+        header, nav {
+            position: relative;
+            z-index: 2;
+            background-color: transparent;
         }
         header {
             padding: 10px 0;
             text-align: center;
-            background-color: transparent; /* Se elimina el fondo blanco */
         }
         header img {
             width: 100%;
@@ -33,29 +38,24 @@
             text-decoration: none;
             padding: 10px 20px;
             margin: 5px;
-            background-color: #131212;
+            background-color: transparent;
+            border: 2px solid white;
             border-radius: 5px;
-            transition: background-color 0.3s ease;
+            transition: background-color 0.3s ease, color 0.3s ease;
             flex-grow: 1;
             text-align: center;
         }
         nav a:hover {
-            background-color: #000000;
-        }
-        .welcome {
-            padding: 20px;
-            text-align: center;
-        }
-        h1 {
-            padding: 10px;
-            border-radius: 5px;
-            display: inline-block;
-            color: white;
+            background-color: rgba(255, 255, 255, 0.2);
+            color: black;
         }
         .background-video {
-            position: relative;
-            height: 600px;
+            position: absolute;
+            top: 0;
+            left: 0;
             width: 100%;
+            height: 100%;
+            z-index: -1;
             overflow: hidden;
         }
         .background-video video {
@@ -67,26 +67,31 @@
             left: 0;
         }
         .welcome-container {
-            position: relative;
-            z-index: 2;
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100%;
+            height: calc(100vh - 80px); /* Ajuste para que cubra el espacio debajo de la navegación */
             padding: 20px;
             box-sizing: border-box;
+            position: relative;
+            z-index: 2;
+        }
+        h1 {
+            padding: 10px;
+            border-radius: 5px;
+            background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente para mejor legibilidad */
         }
         @media (max-width: 768px) {
-            .background-video {
-                height: 400px;
+            .welcome-container {
+                height: calc(100vh - 60px);
             }
             h1 {
                 font-size: 24px;
             }
         }
         @media (max-width: 480px) {
-            .background-video {
-                height: 300px;
+            .welcome-container {
+                height: calc(100vh - 50px);
             }
             h1 {
                 font-size: 20px;
@@ -105,6 +110,13 @@
 </head>
 <body>
 
+    <div class="background-video">
+        <video autoplay muted loop>
+            <source src="img/Video-Fondo.mp4" type="video/mp4">
+            Tu navegador no soporta el elemento de video.
+        </video>
+    </div>
+
     <header>
         <img src="img/logo.png" alt="Logo GES">
     </header>
@@ -118,17 +130,11 @@
         <a href="ubicacion.html">Ubicación</a>
     </nav>
 
-    <div class="background-video">
-        <video autoplay muted loop>
-            <source src="img/Video-Fondo.mp4" type="video/mp4">
-            Tu navegador no soporta el elemento de video.
-        </video>
-        <div class="welcome-container">
-            <div class="welcome">
-                <h1>Bienvenido a GES</h1>
-                <p>Estamos comprometidos con la construcción de tus sueños.</p>
-                <p>8 años de haberla fundado y estamos con personal capacitado para hacer cualquier tipo de trabajo</p>
-            </div>
+    <div class="welcome-container">
+        <div class="welcome">
+            <h1>Bienvenido a GES</h1>
+            <p>Estamos comprometidos con la construcción de tus sueños.</p>
+            <p>8 años de haberla fundado y estamos con personal capacitado para hacer cualquier tipo de trabajo</p>
         </div>
     </div>
 

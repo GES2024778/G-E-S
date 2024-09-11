@@ -6,17 +6,19 @@
     <title>Ubicación - GES</title>
     <link rel="icon" href="IMG/logo1.jpeg" type="image/x-icon">
     <style>
-        body {
-            font-family: Arial, sans-serif;
+        html, body {
             margin: 0;
             padding: 0;
-            background-color: #ffffff;
+            height: 100%;
+            overflow: hidden; /* Evitar scroll en el fondo */
+        }
+        body {
+            font-family: Arial, sans-serif;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: flex-start;
-            height: 100vh;
-            overflow: hidden;
+            background-color: #ffffff;
         }
         header img {
             width: 150px;
@@ -69,8 +71,9 @@
             color: white;
             padding: 20px;
             overflow: auto;
-            max-height: 80vh; /* Limitar altura máxima en dispositivos móviles */
+            max-height: calc(100vh - 100px); /* Ajusta la altura disponible para el contenido */
             width: 100%;
+            box-sizing: border-box; /* Asegura que el padding se tenga en cuenta en el cálculo del tamaño */
         }
         h1 {
             font-size: 3rem;
@@ -168,7 +171,7 @@
     </div>
 
     <footer>
-        ©2024, GES Guatemala           infoges.constructora@gmail.com
+        ©2024, GES Guatemala
     </footer>
 </body>
 </html>

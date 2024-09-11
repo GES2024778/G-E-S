@@ -71,6 +71,7 @@
             display: flex;
             justify-content: center;
             gap: 20px;
+            flex-wrap: wrap; /* Asegura que los logos se envuelvan en varias filas si es necesario */
         }
         .logos img {
             width: 100px;
@@ -86,6 +87,11 @@
             }
             .logos img {
                 width: 80px;
+            }
+        }
+        @media (max-width: 480px) {
+            .logos {
+                flex-direction: column; /* Cambia a columna en pantallas pequeñas */
             }
         }
     </style>

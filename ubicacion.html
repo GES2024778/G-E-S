@@ -98,12 +98,38 @@
             font-size: 0.9rem;
             color: #333;
         }
+        .bottom-nav {
+            display: flex;
+            justify-content: center;
+            background-color: rgba(19, 18, 18, 0.8);
+            padding: 10px;
+            width: 100%;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+        }
+        .bottom-nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 5px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            text-align: center;
+        }
+        .bottom-nav a:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+        .bottom-nav img {
+            width: 30px;
+            vertical-align: middle;
+        }
         @media (max-width: 768px) {
-            nav {
+            nav, .bottom-nav {
                 flex-direction: column;
                 align-items: center;
             }
-            nav a {
+            nav a, .bottom-nav a {
                 padding: 10px;
                 font-size: 14px;
                 max-width: none;
@@ -136,12 +162,6 @@
         <a href="contacto.html">Contacto</a>
         <a href="https://linktr.ee/GES_Constructora">Redes</a>
         <a href="ubicacion.html">Ubicación</a>
-        <a href="https://www.instagram.com/GES_Constructora" target="_blank">
-            <img src="Instagram.png" alt="Instagram"> Instagram
-        </a>
-        <a href="https://www.facebook.com/GES_Constructora" target="_blank">
-            <img src="facebook.jpg" alt="Facebook"> Facebook
-        </a>
     </nav>
 
     <div class="container">
@@ -155,9 +175,20 @@
             </a>
         </div>
     </div>
+
+    <div class="bottom-nav">
+        <a href="https://www.instagram.com/GES_Constructora" target="_blank">
+            <img src="Instagram.png" alt="Instagram">
+        </a>
+        <a href="https://www.facebook.com/GES_Constructora" target="_blank">
+            <img src="facebook.jpg" alt="Facebook">
+        </a>
+    </div>
+
     <footer>
-        ©2024 GES Guatemala | infoges.constructora@gmail.com
+        ©2024 GES Guatemala
     </footer>
 </body>
 </html>
+
 

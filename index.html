@@ -78,20 +78,22 @@
             z-index: 2;
             min-height: 500px; /* Nueva altura mínima */
         }
-        .welcome{
+        .welcome {
             padding: 20px;
             text-align: center;
-            color:white;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.7); /* Fondo semitransparente que engloba todo el contenido */
+            border-radius: 10px; /* Bordes redondeados */
+            max-width: 800px; /* Ancho máximo del cuadro */
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); /* Sombra para resaltar el cuadro */
         }
         h1 {
-            padding: 10px;
-            border-radius: 5px;
-            background-color: rgba(0, 0, 0, 0.7); /* Fondo semitransparente */
+            margin: 0;
+            padding: 10px 0;
         }
         p {
-            padding: 10px;
-            border-radius: 5px;
-            background-color: rgba(0, 0, 0, 0.7); /* Fondo semitransparente */
+            margin: 10px 0;
+            padding: 10px 0;
         }
         @media (max-width: 768px) {
             nav {
@@ -109,8 +111,8 @@
                 font-size: 24px;
                 margin-top: 0;
             }
-            p{
-                margin:15px 0;
+            p {
+                margin: 15px 0;
             }
         }
         @media (max-width: 480px) {

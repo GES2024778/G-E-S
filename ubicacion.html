@@ -30,9 +30,10 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-            background-color: transparent;
+            background-color: rgba(19, 18, 18, 0.8);
             padding: 10px;
             width: 100%;
+            box-sizing: border-box;
             position: relative;
             z-index: 1;
         }
@@ -47,6 +48,7 @@
             text-align: center;
             flex-grow: 1;
             max-width: 150px;
+            box-sizing: border-box;
         }
         nav a:hover {
             background-color: rgba(0, 0, 0, 0.8);
@@ -106,9 +108,11 @@
             background-color: rgba(19, 18, 18, 0.8);
             padding: 10px;
             width: 100%;
+            box-sizing: border-box;
             position: fixed;
             bottom: 0;
             left: 0;
+            z-index: 1;
         }
         .bottom-nav a {
             color: white;
@@ -189,3 +193,4 @@
     </footer>
 </body>
 </html>
+s

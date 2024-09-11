@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ubicación - GES</title>
-    <link rel="icon" href="IMG/logo1.jpeg" type="image/x-icon">
+    <link rel="icon" href="img/logo1.jpeg" type="image/x-icon">
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -17,14 +17,18 @@
             justify-content: flex-start;
             height: 100vh;
             overflow: hidden;
+            color: white;
+            text-shadow: 2px 2px 4px #000;
         }
         header img {
             width: 150px;
             height: auto;
             margin-top: 20px;
+            opacity: 0.8; /* Logo transparente */
         }
         nav {
             display: flex;
+            flex-wrap: wrap;
             justify-content: center;
             background-color: transparent;
             padding: 10px;
@@ -34,19 +38,22 @@
             color: white;
             text-decoration: none;
             padding: 10px 20px;
-            margin: 0 5px;
-            background-color: #131212;
+            margin: 5px;
+            background-color: rgba(19, 18, 18, 0.8); /* Fondo transparente para los botones */
             border-radius: 5px;
             transition: background-color 0.3s ease;
+            text-align: center;
+            flex-grow: 1;
+            max-width: 150px;
         }
         nav a:hover {
-            background-color: #000000;
+            background-color: rgba(0, 0, 0, 0.8); /* Color de fondo en hover */
         }
         #background-video {
             position: fixed;
             top: 50%;
             left: 50%;
-            min-width: 100%; 
+            min-width: 100%;
             min-height: 100%;
             width: auto;
             height: auto;
@@ -86,6 +93,17 @@
             transform: scale(1.1);
         }
         @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                align-items: center;
+            }
+            nav a {
+                padding: 10px;
+                font-size: 14px;
+                max-width: none;
+                width: 100%;
+                text-align: center;
+            }
             h1 {
                 font-size: 2rem;
             }
@@ -112,6 +130,12 @@
         <a href="contacto.html">Contacto</a>
         <a href="https://linktr.ee/GES_Constructora">Redes</a>
         <a href="ubicacion.html">Ubicación</a>
+        <a href="https://www.instagram.com/GES_Constructora" target="_blank">
+            <img src="Instagram.png" alt="Instagram"> Instagram
+        </a>
+        <a href="https://www.facebook.com/GES_Constructora" target="_blank">
+            <img src="facebook.jpg" alt="Facebook"> Facebook
+        </a>
     </nav>
 
     <div class="container">
@@ -125,5 +149,8 @@
             </a>
         </div>
     </div>
+    <footer>
+        ©2024, GES Guatemala             infoges.constructora@gmail.com
+    </footer>
 </body>
 </html>

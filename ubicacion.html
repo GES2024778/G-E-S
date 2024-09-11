@@ -30,7 +30,7 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-            background-color: rgba(19, 18, 18, 0.8);
+            background-color: rgba(19, 18, 18, 0.9); /* Aumentar opacidad para mayor contraste */
             padding: 10px;
             width: 100%;
             box-sizing: border-box;
@@ -42,7 +42,7 @@
             text-decoration: none;
             padding: 10px 20px;
             margin: 5px;
-            background-color: rgba(19, 18, 18, 0.8);
+            background-color: rgba(255, 255, 255, 0.1); /* Fondo semitransparente para mejor legibilidad */
             border-radius: 5px;
             transition: background-color 0.3s ease;
             text-align: center;
@@ -51,7 +51,7 @@
             box-sizing: border-box;
         }
         nav a:hover {
-            background-color: rgba(0, 0, 0, 0.8);
+            background-color: rgba(255, 255, 255, 0.2); /* Mejor visibilidad al hacer hover */
         }
         #background-video {
             position: fixed;
@@ -64,6 +64,7 @@
             z-index: -1;
             transform: translate(-50%, -50%);
             object-fit: cover;
+            filter: brightness(0.7); /* Añadir brillo más bajo para mayor legibilidad sobre el video */
             pointer-events: none;
         }
         .container {
@@ -105,7 +106,7 @@
         .bottom-nav {
             display: flex;
             justify-content: center;
-            background-color: rgba(19, 18, 18, 0.8);
+            background-color: rgba(19, 18, 18, 0.9); /* Aumentar opacidad */
             padding: 10px;
             width: 100%;
             box-sizing: border-box;
@@ -124,7 +125,7 @@
             text-align: center;
         }
         .bottom-nav a:hover {
-            background-color: rgba(0, 0, 0, 0.8);
+            background-color: rgba(255, 255, 255, 0.2);
         }
         .bottom-nav img {
             width: 30px;
@@ -189,8 +190,7 @@
     </div>
 
     <footer>
-        ©2024 GES Guatemala
+        ©2024 GES Guatemala  infoges.constructora@gmail.com
     </footer>
 </body>
 </html>
-s

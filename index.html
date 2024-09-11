@@ -13,7 +13,7 @@
             text-shadow: 2px 2px 4px #000;
             color: white;
         }
-        header, nav {
+        header, nav, footer {
             position: relative;
             z-index: 2;
         }
@@ -46,6 +46,12 @@
         }
         nav a:hover {
             background-color: rgba(102, 102, 102, 0.7); /* Color semitransparente al pasar el mouse */
+        }
+        nav img {
+            width: 24px; /* Tamaño del logo */
+            height: auto;
+            margin-right: 5px;
+            vertical-align: middle;
         }
         .background-video {
             position: fixed;
@@ -94,6 +100,12 @@
         p {
             margin: 10px 0;
             padding: 10px 0;
+        }
+        footer {
+            background-color: rgba(0, 0, 0, 0.7);
+            text-align: center;
+            padding: 15px;
+            color: white;
         }
         @media (max-width: 768px) {
             nav {
@@ -149,6 +161,12 @@
         <a href="Contacto.html">Contacto</a>
         <a href="https://linktr.ee/GES_Constructora">Redes</a>
         <a href="ubicacion.html">Ubicación</a>
+        <a href="https://www.instagram.com/GES_Constructora" target="_blank">
+            <img src="img/instagram.png" alt="Instagram"> Instagram
+        </a>
+        <a href="https://www.facebook.com/GES_Constructora" target="_blank">
+            <img src="img/facebook.png" alt="Facebook"> Facebook
+        </a>
     </nav>
 
     <div class="welcome-container">
@@ -158,6 +176,10 @@
             <p>8 años de haberla fundado y estamos con personal capacitado para hacer cualquier tipo de trabajo</p>
         </div>
     </div>
+
+    <footer>
+        ©2024, GES Guatemala
+    </footer>
 
 </body>
 </html>

@@ -30,6 +30,7 @@
             background-color: transparent;
             padding: 10px;
             width: 100%;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
         }
         nav a {
             color: white;
@@ -62,14 +63,14 @@
             object-fit: cover;
             pointer-events: none;
         }
-        .container {
+        .scroll-container {
             position: relative;
             text-align: center;
             color: white;
-            top: 30%;
-            transform: translateY(-30%);
-            z-index: 1;
-            padding: 20px; /* Añadido para dar más espacio en dispositivos móviles */
+            padding: 20px;
+            overflow: auto;
+            max-height: 80vh; /* Limitar altura máxima en dispositivos móviles */
+            width: 100%;
         }
         h1 {
             font-size: 3rem;
@@ -115,11 +116,6 @@
             nav img {
                 width: 20px;
             }
-            .container {
-                top: 40%; /* Ajustado para mejor visibilidad en dispositivos móviles */
-                transform: translateY(-40%);
-                padding: 10px;
-            }
         }
         footer {
             background-color: rgba(0, 0, 0, 0.7);
@@ -159,7 +155,7 @@
         </a>
     </nav>
 
-    <div class="container">
+    <div class="scroll-container">
         <h1>Encuéntranos en nuestra ubicación</h1>
         <div class="logos">
             <a href="https://www.google.com/maps/dir/14.5862052,-90.5435429/14.5050624,-90.5543535/@14.5451091,-90.5876872,13z/data=!3m1!4b1!4m10!1m5!3m4!2zMTTCsDMwJzE4LjIiTiA5MMKwMzMnMTUuNyJX!8m2!3d14.5050624!4d-90.5543535!4m3!1m1!4e1!1m0?entry=ttu&g_ep=EgoyMDI0MDkwOC4wIKXMDSoASAFQAw%3D%3D" target="_blank">
@@ -172,7 +168,7 @@
     </div>
 
     <footer>
-        ©2024, GES Guatemala
+        ©2024, GES Guatemala           infoges.constructora@gmail.com
     </footer>
 </body>
 </html>

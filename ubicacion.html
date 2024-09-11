@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ubicación - GES</title>
-    <link rel="icon" href="img/logo1.jpeg" type="image/x-icon">
+    <link rel="icon" href="IMG/logo1.jpeg" type="image/x-icon">
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -17,58 +17,51 @@
             justify-content: flex-start;
             height: 100vh;
             overflow: hidden;
-            color: white;
-            text-shadow: 2px 2px 4px #000;
         }
-
         header img {
             width: 150px;
             height: auto;
             margin-top: 20px;
-            opacity: 0.8;
         }
-
         nav {
             display: flex;
+            flex-wrap: wrap;
             justify-content: center;
-            background-color: rgba(0, 0, 0, 0.85);
-            padding: 10px 20px;
+            background-color: transparent;
+            padding: 10px;
             width: 100%;
-            box-sizing: border-box;
-            position: relative;
-            z-index: 1;
         }
-
         nav a {
             color: white;
             text-decoration: none;
-            padding: 10px 15px;
-            margin: 0 10px;
-            background-color: rgba(255, 255, 255, 0.2);
+            padding: 10px 20px;
+            margin: 0 5px;
+            background-color: #131212;
             border-radius: 5px;
             transition: background-color 0.3s ease;
-            text-align: center;
         }
-
         nav a:hover {
-            background-color: rgba(255, 255, 255, 0.4);
+            background-color: #000000;
         }
-
+        nav img {
+            width: 24px; /* Tamaño del logo */
+            height: auto;
+            margin-right: 5px;
+            vertical-align: middle;
+        }
         #background-video {
             position: fixed;
             top: 50%;
             left: 50%;
-            min-width: 100%;
+            min-width: 100%; 
             min-height: 100%;
             width: auto;
             height: auto;
             z-index: -1;
             transform: translate(-50%, -50%);
             object-fit: cover;
-            filter: brightness(0.5);
             pointer-events: none;
         }
-
         .container {
             position: relative;
             text-align: center;
@@ -77,94 +70,52 @@
             transform: translateY(-30%);
             z-index: 1;
         }
-
         h1 {
-            font-size: 2.5rem;
+            font-size: 3rem;
             margin-bottom: 20px;
         }
-
         .logos {
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            gap: 20px;
+            gap: 20px; /* Espaciado entre botones */
         }
-
         .logos a {
             display: block;
         }
-
         .logos img {
-            width: 80px;
+            width: 100px;
             cursor: pointer;
             transition: transform 0.3s ease;
         }
-
         .logos img:hover {
             transform: scale(1.1);
         }
-
-        footer {
-            margin: 20px;
-            text-align: center;
-            font-size: 0.9rem;
-            color: #333;
-        }
-
-        .bottom-nav {
-            display: flex;
-            justify-content: center;
-            background-color: rgba(0, 0, 0, 0.85);
-            padding: 10px;
-            width: 100%;
-            box-sizing: border-box;
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            z-index: 1;
-        }
-
-        .bottom-nav a {
-            color: white;
-            text-decoration: none;
-            padding: 10px 20px;
-            margin: 0 5px;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
-            text-align: center;
-        }
-
-        .bottom-nav a:hover {
-            background-color: rgba(255, 255, 255, 0.4);
-        }
-
-        .bottom-nav img {
-            width: 30px;
-            vertical-align: middle;
-        }
-
         @media (max-width: 768px) {
-            nav, .bottom-nav {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            nav a, .bottom-nav a {
-                padding: 10px;
-                font-size: 14px;
-                max-width: none;
-                width: 100%;
-                text-align: center;
-            }
-
             h1 {
                 font-size: 2rem;
             }
-
             .logos img {
-                width: 60px;
+                width: 80px;
             }
+        }
+        @media (max-width: 480px) {
+            nav a {
+                padding: 10px;
+                font-size: 14px;
+            }
+        }
+        footer {
+            background-color: rgba(0, 0, 0, 0.7);
+            text-align: center;
+            padding: 15px;
+            color: white;
+            position: relative;
+            z-index: 1;
+            width: 100%;
+            bottom: 0;
+            margin-top: auto;
         }
     </style>
 </head>
@@ -185,6 +136,12 @@
         <a href="contacto.html">Contacto</a>
         <a href="https://linktr.ee/GES_Constructora">Redes</a>
         <a href="ubicacion.html">Ubicación</a>
+        <a href="https://www.instagram.com/GES_Constructora" target="_blank">
+            <img src="img/instagram.png" alt="Instagram"> Instagram
+        </a>
+        <a href="https://www.facebook.com/GES_Constructora" target="_blank">
+            <img src="img/facebook.png" alt="Facebook"> Facebook
+        </a>
     </nav>
 
     <div class="container">
@@ -200,7 +157,7 @@
     </div>
 
     <footer>
-        ©2024 GES Guatemala
+        ©2024, GES Guatemala
     </footer>
 </body>
 </html>
